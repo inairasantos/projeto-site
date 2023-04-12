@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{ /*Definir as configurações de cores, fonte e largura do site*/
+    /*PALETA DE CORES*/
+    --corfundo: #FFF;
+    --cortexto: #222;
+    --corprimaria: #0B2B40; /*Cor principal do site*/
+    --corsecundaria: #30A5BF; /*Cor secundária do site*/
+    --cordestaque: #F2BE22; /*Cor para destaques do site*/
+
+    /*FONTES*/
+    --fontegeral: 'Open Sans', sans-serif; /*Fonte geral do site*/
+    --fontetitulos: 'Ubuntu', sans-serif; /*Fonte para títulos do site*/
+    --fontedestaque: 'Alkatra', cursive; /*Fonte especial para o site*/
+
+    /*LARGURAS*/
+    --larguramaxima: 1000px; /*Essa é a largura máxima do site*/
+    --larguraminima: 250px; /*Essa é a largura mínima do site*/
+}
+
+*{
+    margin: 0; /* MARGIN define as margens EXTERNAS */
+    padding: 0; /* PADDING é a margem INTERNA */
+}
+
+body{
+    background-color: var(--corfundo); /* Define a cor de fundo da página*/
+    font-family: var(--fontegeral); /*Define a fonte padrão do site*/
+}
+
+header, main, footer{ /*VOLTAR A PARTI DAQUI*/
+    max-width: var(--larguramaxima); /*Largura máxima do site*/
+    min-width: var(--larguraminima); /*Largura mínima*/
+    margin: auto;
+}
+
+#sociais{
+    background-color: #F2BE22; /*Vai ser apagado*/
+}
+
+.social{
+    width: 35px; /*Largura dos icones das redes sociais*/
+}
+
+#capa{
+    width: 100%; /*LARGURA DA CAPA*/
+    height: 300PX; /*ALTURA - VARIA DE PROJETO A PROJETO*/
+    background-image: url(images/bg-tecnologia.jpg);
+    background-repeat: no-repeat; /*nao repete a imagem*/
+    background-position: 0px 0px; /*ajusta posicao da imagem*/
+    background-size: cover; /*ajusta o tamanho da imagem*/
+    
+}
