@@ -32,10 +32,15 @@ header, main, footer{ /*VOLTAR A PARTI DAQUI*/
     max-width: var(--larguramaxima); /*Largura máxima do site*/
     min-width: var(--larguraminima); /*Largura mínima*/
     margin: auto;
+    position: relative;
 }
 
 #sociais{
-    background-color: #F2BE22; /*Vai ser apagado*/
+    background-color: var(--corsecundaria); /*Vai ser apagado*/
+    position: absolute; /*move em relacao ao objeto pai*/
+    width: 160px ; /*largura*/
+    right: 20px;/*direita*/
+    top: 20px; /*topo*/
 }
 
 .social{
@@ -49,5 +54,20 @@ header, main, footer{ /*VOLTAR A PARTI DAQUI*/
     background-repeat: no-repeat; /*nao repete a imagem*/
     background-position: 0px 0px; /*ajusta posicao da imagem*/
     background-size: cover; /*ajusta o tamanho da imagem*/
-    
+    display: flex; /*os elementos internos flexiveis*/
+    flex-direction: column; /*um acima do outro*/
+    justify-content: center; /*alinhamento vertical*/
+    align-items: center;/*alinhamento horixontal*/
+
+}
+
+#capa h1{
+   color: var(--corfundo);
+    font-size: 2.3em; /*tamanho da font*/
+    font-family: var(--fontedestaque);
+}
+
+#capa p{
+    color: var(--corfundo);
+    font-family:var(--fontedestaque) ;
 }
