@@ -71,3 +71,11 @@ header, main, footer{ /*VOLTAR A PARTI DAQUI*/
     color: var(--corfundo);
     font-family:var(--fontedestaque) ;
 }
+
+#fotoperfil{
+    width: 150px;
+    position: absolute;
+    left: 5px;
+    top: 150px;
+    border-radius: 7px;
+}
